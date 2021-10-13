@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+   
+
+a:hover{
+    background-color:rgb(173, 167, 167);
+}
+.search{
+    display: inline-block;
+    margin-left: auto;
+    width: 2rem;
+    text-align: center;
+    color:white;
+}
+
+    .slider-box{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+#slider{
+    width: 100%;
+    display: inline-flex;
+    transition: 0.7s;
+}
+#slider img{
+    width: 100%;
+    padding-bottom:10px;
+
+    
+   
+  
+}
+.indicaters{
+    position: absolute;
+left: 50%;
+bottom:15%;
+transform: translateX(-50%);
+
+
+}
+.indicaters span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background:gray;
+    cursor: pointer;
+   
+}
+.text{
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 20%;
+                width: 100%;
+                text-align: center;
+             
+            }
+            .but:hover div{
+              display: block;
+              
+            }
+
+  </style>
+
+      
+<title>Template</title>
+</head>
+<body >
+    <!-- Header -->
+    <nav class="w-full ">
+        <ul class=" p-2 flex  bg-black  w-full  text-center ">
+            <li class="text-lg pl-8 text-white m-2 "><a href="#">HOME</a></li>
+            <li class="text-lg pl-8 text-white m-2"><a href="#band">BAND</a></li>
+            <li class="text-lg pl-8 text-white m-2"><a href="#tour">TOUR</a></li>
+            <li class="text-lg pl-8 text-white m-2"><a href="#contact" >CONTACT</a></li>
+            <li class="text-lg pl-6 text-white m-2"><button title="More" class="but">MORE <i class="fa fa-caret-down"></i>
+          <div class="hidden">
+                  <ul >
+                  <li ><a href="#" class="a">Merchandise</a></li>
+                  <li > <a href="#" class="a">Extras</a></li>
+                    <li ><a href="#" class="a">Media</a></li></ul>
+                  </div>
+            
+            </li> </button> 
+            <li><a href="#search"><i class="search"></i></a></li>
+            <a href="javascript:void(0)" class="search"><i class="fa fa-search"></i></a>
+  </div>
+ </ul>
+ </nav>
+ <!-- Image-Slider -->
+
+ <div class="slider-box">
+  <div id="slider" > 
+      <img src="./images/pic1.jpg" alt="1">
+      <div class="text">     <b> NEW YORK</b>
+       <p class="text-sm"> The atmosphere in New York is lorem ipsum.</p>
+      </div>
+      <img src="./images/pic2.jpg" alt="1">
+      <div class="text"></div>
+      <img src="./images/pic3.jpg" alt="1">
+      <div class="text"></div>
+  </div>
+</div>
+
+<div class="indicaters">
+  <span id="btn1"></span>
+  <span id="btn2"></span>
+  <span id="btn3"></span>
+  </div>
+<script>
+var slide = document.getElementById("slider")
+var btn1 = document.getElementById("btn1")
+var btn2 = document.getElementById("btn2")
+var btn3 = document.getElementById("btn3")
+btn1.onclick=function(){
+  slide.style.transform="translateX(0px)";
+}
+btn2.onclick=function(){
+  slide.style.transform="translateX(-100%)";
+}
+btn3.onclick=function(){
+  slide.style.transform="translateX(-200%)";
+}
+
+</script>
+  <!-- The Band -->
+  </div></div><br>
+  <div class=" text-center ml-28 mr-28 mb-20 mt-10  "  >
+  <h2 class="text-center text-3xl   w-full tracking-wider">THE BAND</h2><br>
+    <p class="text-center  text-md text-gray-400"><i>We love music</i></p><br>
+    <p class=" text-justify   m-2 ">
+      We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur 
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+       ex ea commodo consequat.</p>
+      <div class=" grid grid-cols-3  ">
+          <div class=" text-center ">
+           <figcaption class="text-center m-4">Name</figcaption> 
+            <img src="./images/Name.jpg" class="w-40 h-50 border ml-10" alt="1" >
+          </div>
+          <div class=" text-center ">
+            <figcaption class="text-center m-4">Name</figcaption> 
+            <img src="./images/Name.jpg"class="w-40 h-50  border ml-10" alt="2" >
+          </div>
+          <div class=" text-center " >
+            <figcaption class="text-center m-4">Name</figcaption> 
+            <img src="./images/Name.jpg" class="w-40 h-50   border ml-10" alt="3" >
+          </div>
+      </div>
+  </div><br>
+  <!-- Tour dates -->
+  <div class="bg-black  p-28   ">
+    <p class="text-center p-2 text-3xl text-white  tracking-wider" >TOUR DATES</p>
+    <p class="text-center pb-2 text-white italic text-gray-400">Remember to bool your tickit!</p><br>
+    <p class=" text-black border ml-2   bg-white font-serif">Septambar <button class="bg-red-600 border text-white border m-2 pl-2 pr-2">Send out</button></p>
+    <p class=" text-black border ml-2  bg-white font-serif">Octombar <button class="bg-red-600 border text-white m-2 pl-2 pr-2">Send out</button></p>
+    <p class=" text-black border ml-2  bg-white font-serif p-2">November<button class="bg-gray-900 border text-white  float float-right w-6 h-6 rounded-full items-center pb-2">3</button> </p><br>
+    <div class="text-row text-padding-32 grid grid-cols-3 gap-6 p-2">
+      <div class="bg-white " >
+       
+        <img src="./images/NewYork.jpg" class="w3-round w3-margin-bottom w-full" alt="Random Name" >
+        <p class="pl-2  text-xl pb-4  ">New York</p>
+        <p class=" pl-2  text-gray-400 pb-4 ">Fri 27 Nov 2016</p>
+        <p class="lowercase pl-2">Present tincident sed tellus ut </p>
+        <p class="lowercasepl-2 pl-2 ">return sed vitea justo</p><br>
+        <button class="border bg-gray-900 text-white p-2 m-2 ml-4 hover:bg-gray-200  hover:text-black">Buy Tickits</button>
+      </div>
+      <div class="bg-white">
+      
+        <img src="./images/paris.jpg" class="text-round w3-margin-bottom w-full" alt="Random Name" >
+        <p class="pl-2 text-xl pb-4 ">Paris</p>
+        <p class=" pl-2 text-gray-400 pb-4">Fri 27 Nov 2016</p>
+        <p class="lowercase pl-2 ">Present tincident sed tellus ut </p>
+        <p class="lowercase pl-2"> return sed vitea justo</p><br>
+        <button class="border bg-gray-900 text-white p-2 m-2   ml-4 hover:bg-gray-200 hover:text-black">Buy Tickits</button>
+      </div>
+      <div class="bg-white">
+      
+        <img src="./images/san Francisco.jpg" class="w3-round w-full " alt="Random Name" >
+        <p class="pl-2 text-xl pb-4">San Francisco</p>
+        <p class="pl-2  text-gray-400 pb-4">Fri 27 Nov 2016</p>
+        <p class="lowercase pl-2">Present tincident sed tellus ut </p>
+        <p class="lowercase pl-2">return sed vitea justo</p><br>
+        <button class="border bg-gray-900 text-white p-2 m-2  ml-4 hover:bg-gray-200 hover:text-black">Buy Tickits</button>
+      </div>
+    </div>
+  </div >
+
+
+    </div>
+  </div><br>
+  <!-- The Contact Section -->
+  <div class="ml-20 mr-20 mt-4 mb-4 p-2 ">
+  <h2 class=" text-center text-black font-serif uppercase text-3xl tracking-wider">CONTACT</h2><br>
+    <p class="text-center text-black text-gray-400"><i>Fan? Drop a note!</i></p>
+  <div class="grid grid-cols-2  m-8 p-8 ">
+    <div class="text-xl">
+           
+          <i class="text-black fa fa-map-marker w-30 text-2xl ">  Chicago, US</i> <br>
+          <i class="text-black fa fa-phone  w-30   text-2xl ">   Phone: +00 151515</i> <br>
+          <i class="text-black fa fa-envelope w-30  text-2xl  ">  Email: mail@mail.com</i><br>
+      
+    </div>
+    <div >
+        <form action="" target="_blank">
+          
+           <div class="grid grid-cols-2 grid-rows-2 w-80 gap-4 ">
+              <div><input class="text-input bg-grey-200 border  text-md  p-2  mr-2 w-40" type="text" placeholder="Name" required name="Name"></div>
+              <div><input class="text-input  text-md  p-2 border mr-2 w-40 " type="text" placeholder="Email" required name="Email"></div>
+              <input class="text-input border text-md  p-2  w-80" type="text" placeholder="Message" required name="Message">
+            
+            </div>
+          
+          
+          <button class=" ml-60 mt-2 h-10 w-15 pl-4 pr-4 border  text-white bg-gray-900 text-center p-2" type="submit">SEND</button>
+        </form>
+      </div>
+  </div>
+</div> 
+  <br>
+  <hr>
+   <!-- Image of location/map -->
+  <img src="./images/street.jpg" class=" w-full h-full " ><br> <br>
+
+  <!-- Footer -->
+
+<footer class=" p-4 text-center  text-gray-400 text-2xl mb-6">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </footer>
+ 
+    
+
+
+ 
+</body>
+</html>
